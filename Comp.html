@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Compétences</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: beige;
+            color: #333;
+        }
+        header {
+            background-color: rgba(25, 25, 4, 0.907);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .competences {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .competence {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            text-align: center;
+            flex: 1 1 calc(30% - 2rem);
+            max-width: calc(30% - 2rem);
+        }
+        .competence h3 {
+            color: #161907;
+            margin-bottom: 1rem;
+        }
+        .competence p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            .competence {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mes Compétences</h1>
+    </header>
+
+    <div class="container">
+        <div class="competences">
+            <div class="competence">
+                <h3>Programmation</h3>
+                <p>Maîtrise de plusieurs langages comme Python, HTML et SQL. Création de projets web et scripts pour résoudre des problèmes spécifiques.</p>
+            </div>
+
+            <div class="competence">
+                <h3>Mathématiques</h3>
+                <p>Solides compétences en trigonométrie, complétées par une maîtrise des graphes, des matrices et des mathématiques appliquées au traitement du signal.</p>
+            </div>
+
+            <div class="competence">
+                <h3>Gestion de Réseaux</h3>
+                <p>Connaissance des systèmes de fichiers, des systèmes d'exploitation et de l'administration des réseaux informatiques.</p>
+            </div>
+
+            <div class="competence">
+                <h3>Anglais Technique</h3>
+                <p>Amélioration continue en anglais, avec l'objectif de travailler dans des environnements anglophones.</p>
+            </div>
+            <div class="competence">
+                <h3>Système</h3>
+                <p>maîtrise des commandes Linux relatives aux propriétés des fichiers, telles que chown et chmod, permet de gérer efficacement les permissions et la propriété des fichiers.</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Enzo Racinet. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

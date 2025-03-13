@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Palmarès</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: beige;
+            color: #333;
+        }
+        header {
+            background-color:  rgba(5, 5, 1, 0.907);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .palmares {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .palmares-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            text-align: center;
+            flex: 1 1 calc(45% - 2rem);
+            max-width: calc(45% - 2rem);
+        }
+        .palmares-item h3 {
+            color: #061807;
+            margin-bottom: 1rem;
+        }
+        .palmares-item p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            .palmares-item {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mes Palmarès</h1>
+    </header>
+
+    <div class="container">
+        <div class="palmares">
+            <div class="palmares-item">
+                <h3>Musculation</h3>
+                <p>Performance : 100 kg au développé couché.<br> 
+                Description : Force et persévérance acquises grâce à un entraînement régulier et une progression constante.</p>
+            </div>
+
+            <div class="palmares-item">
+                <h3>Natation</h3>
+                <p>Performance : 30 séries de 50 mètres en moins de 25 minutes.<br>
+                Description : Résistance et technique développées pour maintenir une cadence élevée tout au long des séries.</p>
+            </div>
+
+            <div class="palmares-item">
+                <h3>Piano</h3>
+                <p>Œuvres jouées : <em>Sonate au clair de lune</em> de Beethoven et <em>Lacrimosa</em> de Mozart.<br>
+                Description : Maîtrise musicale et émotionnelle des œuvres classiques, avec un travail approfondi sur la technique et l'interprétation.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Enzo Racinet. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
